@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
- 
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifying...</title>
+    <link rel = "icon" href = "icon.png" 
+          type = "image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Authentication</title>
-  <link rel = "icon" href = "icon.png" 
-          type = "image/x-icon">
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -22,10 +28,44 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  
+  
 
 </head>
 
 <body>
+
+    <!-- Loader -->
+  <div class="loader">
+    <div id="spinner" class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // Wait for the page to load
+    window.addEventListener('load', function() {
+      // Add a delay of 3 seconds (3000 milliseconds) before redirecting
+      setTimeout(function() {
+        window.location.href = 'User Dashboard.html'; // Replace 'next-page.html' with the URL of your next page
+      }, 1000);
+    });
+
+    // Function to change the spinner color
+    function changeSpinnerColor(color) {
+      var spinner = document.getElementById('spinner');
+      spinner.classList.remove('text-primary');
+      spinner.style.color = color;
+    }
+  </script>
+  <script>
+    // ...existing code...
+  
+    // Change the spinner color to red
+    changeSpinnerColor('#ce1126');
+  </script>
+</body>
 
   <!--HEADER-->
   <header id="header" class="d-flex align-items-center">
@@ -36,7 +76,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="Home.html">Home</a></li>
-          <li><a class="nav-link" href="Barangay Official Directory.html">Barangay Official Directory</a></li>
+          <li><a class="nav-link" href="#about">Barangay Official Directory</a></li>
           <li><a class="nav-link" href="#team">Organizational Structure</a></li>
           <li><a class="nav-link" href="#portfolio">LGU Code</a></li>
           <li><a class="nav-link scrollto active" href="DILG Intranet.html">DILG Intranet</a></li>
@@ -50,47 +90,6 @@
       </nav>
     </div>
   </header>
-
-  <main id="main">
-
-    <section id="services" class="services">
-    <div class="container">
-
-    <div class="section-title">
-    <h2>Authentication</h2>
-    </div>
-
-    <div class="row">
-        <div class="col-5 mx-auto">
-          <div class="icon-box">
-            <img src="logo.png" class="rounded mx-auto d-block" alt="...">
-            <br>
-            <h4><a>One-Time PIN</a></h4>
-            <a><p>To proceed, a 10-digit code will be sent via SMS.</p></a>
-
-<br>       
-
-            <div class="col-3 mx-auto">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="●●●●●●●●●●">
-            </div><br><br>
-
-
-
-            
-            <a href="Loading.html" class="btn btn-secondary">Enter</a>
-            <br><br><br>
-            <p class="font-weight-normal">Not your phone? <a href="#" onclick="forgotPassword()">Click for help</a>.</p><br>
-
-
-          </div>
-          
-        </div>
-
-        
-
-  </main>
-  
- 
 
   <!--JS FILES-->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
