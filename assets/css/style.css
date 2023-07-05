@@ -1,3 +1,124 @@
+.clock {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-link {
+  color: white;
+}
+.btn-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+#eventListContainer {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#upcomingEvents {
+  margin-top: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+  position: relative;
+}
+
+#upcomingEvents h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#eventList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-actions {
+  display: flex;
+}
+
+.event-actions button {
+  margin-left: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NEW/
+
+
+
+
+
+
 /* Center the loader */
 .loader {
   position: fixed;
